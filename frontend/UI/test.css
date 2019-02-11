@@ -69,6 +69,26 @@ h6 {
   font-family: 'PT Serif', serif;
 }
 
+section h2 {
+  font-size: 4rem;
+  color: #111;
+}
+
+section h3 {
+  margin-top: 10px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #cacaca;
+}
+
+.lead {
+  line-height: 1.9em;
+  font-size: 1.25em;
+  color: #777;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   color: #6c7686;
