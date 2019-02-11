@@ -1,0 +1,178 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6c7686;
+}
+
+h5.py-2.my-0.mr-md-auto {
+  font-size: 25px;
+  color: #ef5285;
+  font-weight: 900;
+  font-family: "Dancing Script";
+  text-shadow: 2px 2px 2px #b9a3a3;
+}
+
+a.btn.btn-outline-primary {
+  color: #fff;
+  border-color: #ef5285;
+  border-radius: 22px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #ef5285;
+}
+
+/* a.btn.btn-lg.btn-outline-primary */
+a.btn.btn-outline-primary:hover {
+  color: #fff;
+  border-color: #ef5285;
+  border-radius: 22px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #ef5285;
+}
+
+a.btn.btn-lg.btn-outline-primary {
+  color: #fff;
+  border: 2px solid #ef5285;
+  border-radius: 22px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background-color: #ef5285;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(239, 82, 133, 0.5);
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #ef5285;
+}
+
+div.carousel-caption.text-center,
+div.carousel-caption.text-left {
+  padding: 180px 0;
+  margin-bottom: 50px;
+}
+
+div.carousel-caption.text-center h1,
+div.carousel-caption.text-left h1,
+div.carousel-caption.text-left h2,
+div.carousel-caption.text-center h2 {
+  color: #fff;
+}
+div.carousel-caption.text-center h2,
+div.carousel-caption.text-left h2 {
+  font-size: 4rem;
+  font-family: "Dancing Script";
+  font-weight: 700;
+}
+div.carousel-caption.text-center h1,
+div.carousel-caption.text-left h1 {
+  font-size: 72px;
+  font-family: "Dancing Script";
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+div.carousel-caption.text-center p,
+div.carousel-caption.text-left p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+div.carousel-caption.text-left span p {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.text-primary.organizer {
+  font-size: 40px;
+  font-family: "Dancing Script";
+}
+
+.text-primary {
+  color: #ef5285 !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 50rem;
+  /* background-color: #777; */
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 50rem;
+}
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+/* Featurettes
+  ------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
