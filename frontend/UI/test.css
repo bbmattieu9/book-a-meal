@@ -146,6 +146,41 @@ div.carousel-caption.text-left span p {
   margin-left: 0.75rem;
 }
 
+
+/*
+    About Section
+*/
+section.about {
+  background: #f9f9f9;
+  position: relative;
+}
+section.about::before {
+  content: '';
+  display: block;
+  background-position: center center;
+  background: url(frontend/UI/dish-d.png) no-repeat;
+  background-size: 100%;
+  position: absolute;
+  max-width: 300px;
+  height: 250px;
+  width: 30vw;
+  bottom: -150px;
+  right: -10vw;
+}
+
+
+/*
+    Dishes Section
+*/
+section.dishes .dish {
+  width: 100%;
+  padding: 20px;
+}
+section.dishes .dish img {
+  position: relative;
+  max-width: 280px;
+}
+
 /* Featurettes
   ------------------------- */
 
