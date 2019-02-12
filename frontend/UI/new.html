@@ -1,51 +1,246 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Book-A-Meal App</title>
-<link href="styles.css" rel="stylesheet">
-<link
-href="https://fonts.googleapis.com/css?family=Nunito"
-rel="stylesheet"
-/>
-<link
-href="https://fonts.googleapis.com/css?family=Dancing+Script"
-rel="stylesheet"
-/>
-</head>
-<body>
-<header>
-<h1>Book A meal <img src="img/staff.png" width="60" height="60" alt="book-a-meal" class="badge"></h1>
-<nav>
-	<ul>
-		<li><a href="#">About</a></li>
-		<li><a href="#">Menu</a></li>
-        <li><a href="#">Order</a></li>
-        <li><a href="#">Sign up</a></li>
-	</ul>
-</nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="" />
 
-<section class="hero">
-    <div class="sl-slide bg-1">
-        <div class="sl-slide-inner" style="background-image: url(img/hero-bg.jpg);">
-            <div class="">
-                <h2>
-                    The best <span class="text-primary">online restaurant</span>
-                  </h2>
-                  <h1>Book-a-Meal</h1>
-                <p>An elegant meal app brought to you by<a href="forloop.com/" target="_blank"><span class="my-text-primary organizer">Andelaforloop</span></a>.
-                  </p>
-            </div>
-        </div>
+    <title>Book A Meal App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="frontend/UI/test.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="container d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white  shadow-sm fixed-top"
+    >
+      <h5 class="py-2 my-0 mr-md-auto">Book-a-Meal</h5>
+      <!-- <nav class="py-2 my-0 mr-md-auto">
+        
+        <h5>Book-a-Meal<img src="frontend/UI/img/staff.png" style="width: 40px;" /></h5>
+      </nav> -->
+    
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a class="p-2 text-dark" href="#">About</a>
+        <a class="p-2 text-dark" href="#">Menu</a>
+        <a class="p-2 text-dark" href="#">Order</a>
+      </nav>
+      <a class="btn btn-outline-primary" href="frontend/UI/login.html">Sign in</a>
     </div>
-</section>
+    <!-- </header> -->
+
+    <main role="">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="first-slide" src="frontend/UI/img/hero-bg.jpg" alt="First slide" />
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h2>
+                  The best <span class="text-primary">online restaurant</span>
+                </h2>
+                <h1>Book-a-Meal</h1>
+                <p>
+                  <!-- An elegant meal app brought to you by
+                  <a href="forloop.com/" target="_blank"
+                    ><span class="text-primary organizer"
+                      >Andelaforloop</span
+                    ></a
+                  >. -->
 
 
-<footer>
-<div class="copyright">
-<p>Copyright 2019, Book-A-Meal</p>
-</div>
-</footer>
-</body>
+                  Sir, I am re creating muy UI because on the first day<br/>
+                  of the meet up we were told we can use bootstrap4 which i did<br>
+                  Now i am re-creating my UI with pure html5 & css3<br/>
+                  Please do not disqualify me. i WILL FINISH IT TODAY!!
+                  <a href="forloop.com/" target="_blank"
+                    ><span class="text-primary organizer"
+                      >Andelaforloop</span
+                    ></a
+                  >.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="second-slide"
+              src="frontend/UI/img/hero-bg02.jpg"
+              alt="Second slide"
+            />
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h2>
+                  The best <span class="text-primary">online restaurant</span>
+                </h2>
+                <h1>Delicious Delicacies..</h1>
+                <p>
+                  An<a href="forloop.com/" target="_blank"
+                    ><span class="text-primary organizer">
+                      Andelaforloop</span
+                    ></a
+                  >
+                  meal app project.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="third-slide"
+              src="frontend/UI/img/hero-bg03.jpg"
+              alt="Third slide"
+            />
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1>One more for good measure.</h1>
+                <p>
+                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id
+                  dolor id nibh ultricies vehicula ut id elit.
+                </p>
+                <p>
+                  <a
+                    class="btn btn-lg btn-outline-primary"
+                    href="#"
+                    role="button"
+                    >Browse menu
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#myCarousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#myCarousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container text-center">
+          <header>
+            <h2>About Book-a-Meal</h2>
+            <h3>Check our story</h3>
+          </header>
+          <p class="lead">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur
+          </p>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- Dishes Section -->
+
+
+      <section id="dishes" class="dishes">
+        <div class="container text-center">
+          <header>
+            <h2>Our Dishes</h2>
+            <h3>Fresh and healthy food available</h3>
+          </header>
+          <div class="card-group">
+            <div class="card no-border">
+              <img src="frontend/UI/img/dish-a.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Fresh Shrimp</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <a href="#" class="btn btn-outline-primary">Order</a>
+              </div>
+            </div>
+            <div class="card no-border">
+              <img src="frontend/UI/img/dish-b.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Fresh Shrimp</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <a href="#" class="btn btn-outline-primary">Order</a>
+              </div>
+            </div>
+            <div class="card no-border">
+              <img src="frontend/UI/img/dish-c.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h3 class="card-title">Fresh Shrimp</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <a href="#" class="btn btn-outline-primary">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Dishes Section -->
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>
+          &copy;2019 Book-A-Meal. &middot;
+          <a href="#">Privacy</a> &middot; <a href="#">Terms</a>
+        </p>
+      </footer>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
