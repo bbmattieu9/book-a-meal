@@ -12,7 +12,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   font-weight: 700;
   line-height: 1.2;
   color: #111111;
@@ -66,11 +66,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
+}
+html {
+  height: 100%;
 }
 
-section{
-  padding-top: 30px 0px 30px 0px;
+header {
+  z-index: 1000;
+}
+section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+section header {
+  margin-bottom: 50px;
 }
 
 section h2 {
@@ -94,6 +106,8 @@ section h3 {
 }
 
 body {
+  height: 100%;
+  box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   color: #6c7686;
 }
@@ -117,12 +131,12 @@ a.btn.btn-outline-primary {
 
 /* a.btn.btn-lg.btn-outline-primary */
 a.btn.btn-outline-primary:hover {
-  color: #fff;
+  color: #ef5285;
   border-color: #ef5285;
   border-radius: 22px;
   padding-right: 25px;
   padding-left: 25px;
-  background-color: #ef5285;
+  background-color: #fff;
 }
 
 a.btn.btn-lg.btn-outline-primary {
@@ -191,7 +205,7 @@ div.carousel-caption.text-left span p {
 }
 
 .btn-primary,
-.btn-primary.btn-lg{
+.btn-primary.btn-lg {
   background-color: #ef5285 !important;
 }
 
@@ -218,25 +232,8 @@ div.carousel-caption.text-left span p {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 50rem;
+  height: 70rem;
 }
-
-/* MARKETING CONTENT
-  -------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-/* .marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-} */
-
 
 /*
     About Section
@@ -246,10 +243,10 @@ section.about {
   position: relative;
 }
 section.about::before {
-  content: '';
+  content: "";
   display: block;
   background-position: center center;
-  background: url('frontend/UI/dish-d.png') no-repeat;
+  background: url("img/dish-d.png") no-repeat;
   background-size: 100%;
   position: absolute;
   max-width: 300px;
@@ -258,7 +255,6 @@ section.about::before {
   bottom: -150px;
   right: -10vw;
 }
-
 
 /*
     Dishes Section
@@ -272,13 +268,29 @@ section.dishes .dish img {
   max-width: 280px;
 }
 
-/* Featurettes
-  ------------------------- */
+img.card-img-top {
+  padding-top: 50px;
+}
+
+.card.no-border {
+  border: none;
+}
+
+h3.card-title {
+  color: #111;
+  font-weight: bold;
+}
+
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+
+
+/*
+* Login Form style
+*/
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
@@ -309,7 +321,7 @@ section.dishes .dish img {
 .form-signin .btn {
   font-size: 80%;
   border-radius: 5rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: bold;
   padding: 1rem;
   transition: all 0.2s;
@@ -325,12 +337,12 @@ section.dishes .dish img {
   border-radius: 2rem;
 }
 
-.form-label-group>input,
-.form-label-group>label {
+.form-label-group > input,
+.form-label-group > label {
   padding: var(--input-padding-y) var(--input-padding-x);
 }
 
-.form-label-group>label {
+.form-label-group > label {
   position: absolute;
   top: 0;
   left: 0;
@@ -341,8 +353,8 @@ section.dishes .dish img {
   line-height: 1.5;
   color: #495057;
   border: 1px solid transparent;
-  border-radius: .25rem;
-  transition: all .1s ease-in-out;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
 }
 
 .form-label-group input::-webkit-input-placeholder {
@@ -370,7 +382,7 @@ section.dishes .dish img {
   padding-bottom: calc(var(--input-padding-y) / 3);
 }
 
-.form-label-group input:not(:placeholder-shown)~label {
+.form-label-group input:not(:placeholder-shown) ~ label {
   padding-top: calc(var(--input-padding-y) / 3);
   padding-bottom: calc(var(--input-padding-y) / 3);
   font-size: 12px;
