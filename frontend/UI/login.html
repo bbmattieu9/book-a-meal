@@ -1,62 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="icon" href="" />
-
-    <title>Book A Meal App</title>
-
-    <!-- Bootstrap core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Dancing+Script"
-      rel="stylesheet"
-    />
-
-    <!-- Custom styles for this template -->
-    <link href="UI/test.css" rel="stylesheet" />
-  </head>
+<head>
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"/>    
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card card-signin my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Sign In</h5>
-            <form class="form-signin">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                <label for="inputEmail">Email address</label>
-              </div>
+        <header class="sticky">
 
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
-              </div>
+                <div class="row">
+                    <a class="logo" href="#"><img src="img/staff.png" style="width: 54px;"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#order">Order</a></li>
+                            <li><a href="signup.html"><span>Sign up</span></a></li>
+                            <li><a href="login.html"><span>Log in</span></a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- / row -->
+            </header>
 
-            
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-              <hr class="my-4">
-              
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+            <section class="loginForm">
+                    <form action="" style="border:1px solid #ccc">
+                        <div class="formContainer">
+                          <h1 style="text-align: center;">Sign in</h1>
+                          <p style="text-align: center;">Sign in to place orders</p>
+                          <hr>
+                          <label for="email"><b>Email</b></label>
+                          <input type="text" name="email" required>
+                      
+                          <label for="psw"><b>Password</b></label>
+                          <input type="password" name="psw" required>
+                             
+                          <label>
+                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                          </label>
+                      
+                          <div class="clearfix">
+                            <hr>
+                            <button type="submit" class="signupbtn">Sign In</button>
+                          </div>
+                        </div>
+                      </form>
+
+            </section>
