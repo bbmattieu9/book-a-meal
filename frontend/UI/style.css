@@ -399,7 +399,6 @@ div.bam-column > p {
 }
 
 .buy-btn:hover {
-  width: 50%;
   background: #ef5285;
   border: 1px solid #ef5285;
   color: #fff;
