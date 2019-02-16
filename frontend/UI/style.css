@@ -397,6 +397,14 @@ div.bam-column > p {
   border: 1px solid #ef5285;
   color: #ef5285;
 }
+
+.buy-btn:hover {
+  width: 50%;
+  background: #ef5285;
+  border: 1px solid #ef5285;
+  color: #fff;
+}
+
 /*
 			Form Style
 	*/
