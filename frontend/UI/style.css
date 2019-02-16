@@ -143,9 +143,9 @@ body {
   font-family: "Nunito", sans-serif;
   color: #6c7686;
 }
-body.svg{
+body.svg {
   background: url(img/hero-bg.svg) no-repeat center center fixed;
-background-size: cover;
+  background-size: cover;
 }
 
 .sticky {
@@ -381,7 +381,7 @@ div.bam-column > h2 {
 }
 
 div.bam-column > p {
-	font-family: 'PT Serif';
+  font-family: "PT Serif";
 }
 
 /*
@@ -399,8 +399,8 @@ form {
 }
 div.formContainer p {
   text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 label b {
