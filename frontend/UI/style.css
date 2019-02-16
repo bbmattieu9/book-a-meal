@@ -144,7 +144,6 @@ body {
   color: #6c7686;
 }
 
-
 .sticky {
   position: fixed;
   top: 0px;
@@ -216,12 +215,10 @@ nav ul a {
   font-weight: 900;
 }
 
-
 body.svg {
   background: url(img/hero-bg.svg) no-repeat center center fixed;
   background-size: cover;
 }
-
 
 .bam-row {
   display: flex;
@@ -324,6 +321,7 @@ div.hero-text {
   font-size: 4rem;
   font-size: 700;
 }
+
 .hero-text h1 {
   font-size: 72px;
   font-family: "Dancing Script";
@@ -388,6 +386,17 @@ div.bam-column > p {
   font-family: "PT Serif";
 }
 
+.price {
+  color: #ef5285a1;
+  font-weight: 900;
+}
+
+.buy-btn {
+  width: 50%;
+  background: #fff;
+  border: 1px solid #ef5285;
+  color: #ef5285;
+}
 /*
 			Form Style
 	*/
