@@ -1,0 +1,39 @@
+{
+  "name": "book-a-meal-app",
+  "version": "1.0.0",
+  "description": "A simple meal booking app with react and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbmattieu9/book-a-meal.git"
+  },
+  "keywords": [
+    "book-a-meal",
+    "nodejs",
+    "api",
+    "javascript",
+    "es6"
+  ],
+  "author": "Babatunde Mattieu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bbmattieu9/book-a-meal/issues"
+  },
+  "homepage": "https://github.com/bbmattieu9/book-a-meal#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
