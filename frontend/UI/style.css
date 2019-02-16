@@ -143,10 +143,7 @@ body {
   font-family: "Nunito", sans-serif;
   color: #6c7686;
 }
-body.svg {
-  background: url(img/hero-bg.svg) no-repeat center center fixed;
-  background-size: cover;
-}
+
 
 .sticky {
   position: fixed;
@@ -218,6 +215,13 @@ nav ul a {
   font-size: 12px;
   font-weight: 900;
 }
+
+
+body.svg {
+  background: url(img/hero-bg.svg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 
 .bam-row {
   display: flex;
