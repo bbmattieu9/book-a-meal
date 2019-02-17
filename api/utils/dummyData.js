@@ -37,4 +37,22 @@ export default {
       price: 400,
     },
   ],
+  // ordered meal object
+  orderedmeal: [
+    {
+      id: 1,
+      mealid: 2,
+      quantity: 1,
+    },
+    {
+      id: 2,
+      mealid: 6,
+      quantity: 2,
+    },
+    {
+      id: 3,
+      mealid: 3,
+      quantity: 1,
+    },
+  ],
 };

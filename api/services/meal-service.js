@@ -15,18 +15,18 @@ const MealService = {
   },
 
   addMeal(meal) {
-    let mealId = meal;
+    const mealId = meal;
     const lengthOfMeal = dummyData.meals.length;
     const lastMealId = dummyData.meals[lengthOfMeal - 1].id;
-    mealId = lastMealId + 1;
-    const newMeal = new Meal();
-    newMeal.id = mealId;
+    const newId = lastMealId + 1;
+    mealId.id = newId;
     dummyData.meals.push(meal);
     return meal;
   },
 
   getAMeal(id) {
-    const findMealById = dummyData.meals.find(meal => meal.id === id);
+    const mealId = id;
+    const findMealById = dummyData.meals.find(meal => Number(meal.id) === Number(mealId));
     return findMealById || {};
   },
 };
