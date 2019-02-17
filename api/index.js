@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
   res.send('The API is working');
 });
 
-app.use('/api/v1/meals', mealRoutes);  
+app.use('/api/v1/meals', mealRoutes);
+app.use('/api/v1/orders', mealRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is listening to port ${PORT}`);
