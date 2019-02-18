@@ -22,7 +22,7 @@ const OrderController = {
       .status(201);
   },
 
-  getASingleOrderById(req, res) {
+  getOne(req, res) {
     const usingThisId = req.params.id;
     const theSingleOrderFound = OrderService.getAMeal(usingThisId);
     return res
@@ -32,5 +32,7 @@ const OrderController = {
       })
       .status(200);
   },
+
+  // PUT Action down here...
 };
 export default OrderController;

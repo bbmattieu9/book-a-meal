@@ -32,5 +32,25 @@ const MealController = {
       })
       .status(200);
   },
+
+  deleteMealById(req, res) {
+    const usingThisId = req.params.id;
+    const mealToDelete = MealService.destroyOneMeal(usingThisId);
+    return res.json({
+      status: 'success',
+      data: mealToDelete,
+    }).status(200);
+  },
+
+  updateMealById(req, res) {
+    const withMealId = req.params.id;
+    const theUpdatedMeal = MealService.updateOneMeal(withMealId);
+    return res
+      .json({
+        status: 'success',
+        data: theUpdatedMeal,
+      })
+      .status(200);
+  },
 };
 export default MealController;
