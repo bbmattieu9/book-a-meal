@@ -4,7 +4,8 @@
   "description": "A simple meal booking app with react and nodejs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node index.js"
+    "start": "nodemon --exec babel-node index.js",
+    "test" : "mocha"
   },
   "repository": {
     "type": "git",
