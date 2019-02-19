@@ -55,6 +55,7 @@ const MealService = {
       return newItem;
     });
     const update = dummyData.meals.splice(theMealIndexById, 1, oldData);
+    console.log(theMealIndexById);  
     return update;
   },
 };
