@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.9.1.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="bam.js"></script>
+    <style>
+      table {
+        font-family: "Nunito", sans-serif;
+        border-collapse: collapse;
+        width: 960px;
+        margin: 0 auto;
+        margin-top: 40px;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        padding: 8px;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      td.mealImg {
+        width: 8%;
+      }
+
+      th {
+        color: #343a40;
+      }
+
+      .total {
+        /* text-align: right;  */
+        padding-top: 40px;
+        font-weight: 900;
+        color: #343a40;
+        font-size: 16px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="bam-container">
+        <a class="logo" href="#"
+          ><img src="img/staff.png" style="width: 54px;"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <!-- <li><a href="#Add to cart">Add to cart</a></li> -->
+            <li>
+              <a href="order.html" class="active"><span>Cart</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- / row -->
+    </header>
+
+    <section class="how-bam-works">
+      <div class="bam-container">
+        <h1 class="">Admin Portal</h1>
+        <h3 class="bam-underline"></h3>
+      </div>
+
+      <div class="bam-row">
+        
+          <!-- <div class="bam-cards">
+            <p>total number of Orders<span class="totalnumbIs"> 200</span></p>
+          </div> -->
+
+          <div class="bam-cards">
+                <p>total number of Orders<span class="totalnumbIs"> 200</span></p>
+          </div>
+
+          <div class="bam-cards">
+                <p>total number of Users<span class="totalnumbIs"> 200</span></p>
+          </div>
+
+          <div class="bam-cards">
+                <p>total number of Orders<span class="totalnumbIs"> 200</span></p>
+          </div>
+        
+          <div class="bam-cards">
+              <button class=""> Add Meal</button>
+              <button class="">Create Menu</button>
+          </div>
+      </div>
+
+      <table>
+        <tr>
+          <th>s/n</th>
+          <th>OrderId</th>
+          <th>MealId</th>
+          <th>Time</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>
+            1
+          </td>
+          <td>3</td>
+          <td>16</td>
+          <td>Feb 10 2019</td>
+          <td>#1500</td>
+        </tr>
+
+        <tr>
+          <td>
+            2
+          </td>
+          <td>5</td>
+          <td>17</td>
+          <td>Feb 10 2019</td>
+          <td>#4500</td>
+        </tr>
+
+        <tr>
+          <td>
+            3
+          </td>
+          <td>3</td>
+          <td>18</td>
+          <td>Feb 10 2019</td>
+          <td>#2000</td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.9.1.js"
+    ></script>
+  </head>
+  <body class="svg">
+    <header class="sticky">
+      <div class="bam-container">
+        <a class="logo" href="#"
+          ><img src="img/staff.png" style="width: 54px;"
+        /></a>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://bbmattieu9.github.io/book-a-meal/">About</a>
+            </li>
+            <li><a href="#menu">Menu</a></li>
+            <!-- <li><a href="#order">Order</a></li> -->
+            <li>
+              <a href="signup.html"><span>Sign up</span></a>
+            </li>
+            <li>
+              <a href="login.html"><span>sign in</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- / row -->
+    </header>
+
+    <section class="signupForm">
+      <form action="" style="border:1px solid #ccc">
+        <div class="formContainer">
+          <h1 style="text-align: center;">Sign Up</h1>
+          <p style="text-align: center;">
+            Please fill in this form to create an account.
+          </p>
+
+          <label for="name"><b>Name</b></label>
+          <input
+            type="text"
+            placeholder="e.g Babatoonday Mattieu"
+            name="name"
+            required
+          />
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" name="psw" required />
+
+          <label for="psw-repeat"><b>Confirm Password</b></label>
+          <input type="password" name="psw-repeat" required />
+
+          <p
+            style="font-size: 13px;
+                          font-weight: 900;
+                          margin-top: 20px;"
+          >
+            Click to read our
+            <a
+              href="#"
+              style="font-size: 13px;
+                            color: dodgerblue;
+                            font-weight: 900;"
+              >Terms & Privacy</a
+            >.
+          </p>
+
+          <div class="clearfix">
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
