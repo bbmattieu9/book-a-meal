@@ -20,6 +20,10 @@ app.use('/api/v1/meals', mealRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/menu', menuRoutes);
 
-app.listen(PORT, () => {
+
+const server = app.listen(PORT, () => {
   console.log(`Server is listening to port ${PORT}`);
 });
+
+
+module.exports = server;
