@@ -43,20 +43,12 @@ const MealService = {
   },
 
 
-  updateOneMeal(id) {
-    const mealId = id;
-    const mealToUpdate = dummyData.meals.find(meal => Number(meal.id) === Number(mealId));
-    const theMealIndexById = dummyData.meals.indexOf(mealToUpdate);
-    const oldData = dummyData.meals.map((oldMeal) => {
-      const newItem = new Meal();
-      newItem.name = oldMeal.name;
-      newItem.size = oldMeal.size;
-      newItem.price = oldMeal.prize;
-      return newItem;
-    });
-    const update = dummyData.meals.splice(theMealIndexById, 1, oldData);
-    console.log(theMealIndexById);
-    return update;
+  updateOneMeal(id, updateMeal) {
+    const updateMealId = updateMeal;
+    const mealId = dummyData.meals.find(meal => Number(meal.id) === Number(id));
+    updateMealId.id = mealId.id;
+    dummyData.meals.splice(mealId.id - 1, 1, updateMeal);
+    return updateMeal;
   },
 };
 export default MealService;
