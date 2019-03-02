@@ -30,11 +30,11 @@
         margin-top: 40px;
       }
 
-      /* td,
+      td,
       th {
         border: 1px solid #dddddd;
         padding: 8px;
-      } */
+      }
 
       td {
         text-align: center;
@@ -44,28 +44,24 @@
         width: 8%;
       }
 
-    th
-    {
+      th {
         color: #343a40;
-    }
+      }
 
-    .total
-    {
+      .total {
         /* text-align: right;  */
-        padding-top:40px;
+        padding-top: 40px;
         font-weight: 900;
-        color:#343a40;
+        color: #343a40;
         font-size: 16px;
-    }
+      }
 
-/* <!-- 
       tr:nth-child(even) {
         background-color: #dddddd;
-      } --> */
-
+      }
     </style>
   </head>
-  <body class="svg">
+  <body>
     <header class="sticky">
       <div class="bam-container">
         <a class="logo" href="#"
@@ -73,7 +69,7 @@
         /></a>
         <nav>
           <ul>
-            <li><a href="https://bbmattieu9.github.io/book-a-meal/">About</a></li>
+            <li><a href="index.html">About</a></li>
             <li><a href="menu.html">Menu</a></li>
             <!-- <li><a href="#Add to cart">Add to cart</a></li> -->
             <li>
@@ -84,55 +80,73 @@
       </div>
       <!-- / row -->
     </header>
+
     <section class="how-bam-works">
       <div class="bam-container">
-        <h1 class="">Cart Overview</h1>
+        <h1 class="">Admin Portal</h1>
         <h3 class="bam-underline"></h3>
+      </div>
+
+      <div class="bam-row">
+        
+          <!-- <div class="bam-cards">
+            <p>total number of Orders<span class="totalnumbIs"> 200</span></p>
+          </div> -->
+
+          <div class="bam-cards">
+                <p>total number of Orders<span class="totalnumbIs"> 200</span></p>
+          </div>
+
+          <div class="bam-cards">
+                <p>total number of Users<span class="totalnumbIs"> 200</span></p>
+          </div>
+
+          <div class="bam-cards">
+                <p>total number of Orders<span class="totalnumbIs"> 200</span></p>
+          </div>
+        
+          <div class="bam-cards">
+              <button class=""> Add Meal</button>
+              <button class="">Create Menu</button>
+          </div>
       </div>
 
       <table>
         <tr>
-          <th>Meal</th>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Remove</th>
-          <th>Total</th>
+          <th>s/n</th>
+          <th>OrderId</th>
+          <th>MealId</th>
+          <th>Time</th>
+          <th>Amount</th>
         </tr>
         <tr>
-          <td class="mealImg">
-            <img src="img/bg07-small.jpg" style="width:100px; height: 70px;" />
+          <td>
+            1
           </td>
-          <td>Fried Rice with Chicken</td>
-          <td>1500</td>
-          <td>- 1 +</td>
-          <td><i class="far fa-trash-alt"></i></td>
+          <td>3</td>
+          <td>16</td>
+          <td>Feb 10 2019</td>
           <td>#1500</td>
         </tr>
 
         <tr>
-          <td class="mealImg">
-            <img src="img/bg07-small.jpg" style="width:100px; height: 70px;" />
+          <td>
+            2
           </td>
-          <td>Chips with Fish</td>
-          <td>1500</td>
-          <td>- 2 +</td>
-          <td><i class="far fa-trash-alt"></i></td>
-          <td># 3000</td>
+          <td>5</td>
+          <td>17</td>
+          <td>Feb 10 2019</td>
+          <td>#4500</td>
         </tr>
 
         <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td class="total">Total:</td>
-          <td class="total">
-            # 4500<br />
-            <!-- <button type="submit" class="order-btn">PAY</button> -->
-            
-            <a href="pay.html" class="add-to-cart">Make Payment</a>
+          <td>
+            3
           </td>
+          <td>3</td>
+          <td>18</td>
+          <td>Feb 10 2019</td>
+          <td>#2000</td>
         </tr>
       </table>
     </section>

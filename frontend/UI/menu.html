@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.9.1.js"
+    ></script>
+
+    <style>
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 150px; /* Location of the box */
+        left: 340px;
+        top: 0;
+        width: 50%; /* Full width */
+        height: 70%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        /* background-color: rgb(0, 0, 0); Fallback color */
+        /* background-color: rgba(0, 0, 0, 0.4); Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 50%;
+      }
+
+      div.modal-content h2 {
+        text-align: center;
+        font-family: "PT Sans";
+        margin-bottom: 10px;
+      }
+
+      div.modal-content p {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .modalButtons {
+        padding: 10px 20px;
+      }
+      /* The Close Button */
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky">
+      <div class="bam-container">
+        <a class="logo" href="#"
+          ><img src="img/staff.png" style="width: 54px;"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="https://bbmattieu9.github.io/book-a-meal/">About</a></li>
+            <li><a href="menu.html" class="active">Menu</a></li>
+            <!-- <li><a href="#Add to cart">Add to cart</a></li> -->
+            <li>
+              <a href="order.html"
+                >Cart</a>
+            </li>
+            <!-- <a type="a" class="btn">Sign in</a> -->
+          </ul>
+        </nav>
+      </div>
+      <!-- / row -->
+    </header>
+
+    <!-- Trigger/Open The Modal -->
+    <!-- <button >Open Modal</button> -->
+
+    <!-- The Modal -->
+
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img src="img/dish-b.png" style="width:350px; margin:0 auto" />
+        <h2>RICE + VEGGIES</h2>
+        <p>Served as a choice meal, a protein and a 35cl pet drink.</p>
+        <div class="modalButtons">
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+          <a href="menu.html" class="add-to-cart">Back to Menu</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="how-bam-works">
+      <div class="bam-container">
+        <h1 class="">Menu List</h1>
+        <h3 class="bam-underline"></h3>
+      </div>
+
+      <div class="bam-row space-me">
+        <div class="bam-column">
+          <img src="img/dish-b.png" />
+          <h2>Rice + Veggies</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+          <p><span class="price">Price:</span> 950.00</p>
+          <a id="myBtn1" onclick="doStuff()" class="myBtn add-to-cart"
+            >View Meal</a
+          >
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+        <div class="bam-column">
+          <img src="img/dish-a.png" />
+
+          <h2>Spagehtti Special</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+          <p><span class="price">Price:</span> 750.00</p>
+          <a id="myBtn2" onclick="doStuff()" class="myBtn add-to-cart"
+            >View Meal</a
+          >
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+        <div class="bam-column">
+          <img src="img/dish-c.png" />
+          <h2>Shrimps</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+
+          <p><span class="price">Price:</span> 800.00</p>
+          <a id="myBtn3" onclick="doStuff()" class="myBtn add-to-cart"
+            >View Meal</a
+          >
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+      </div>
+
+      <hr style="margin-top: 50px;" />
+
+      <div class="bam-row space-me">
+        <div class="bam-column">
+          <img src="img/dish-b.png" />
+          <h2>Rice + Veggies</h2>
+          <p><span class="price">Price:</span> 950.00</p>
+          <a id="myBtn4" onclick="doStuff()" class="myBtn4 add-to-cart"
+            >View Meal</a
+          >
+          <a href="order.html " class="add-to-cart">Add to cart</a>
+        </div>
+        <div class="bam-column">
+          <img src="img/dish-a.png" />
+
+          <h2>Spagehtti Special</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+
+          <p><span class="price">Price:</span> 750.00</p>
+          <a class="myBtn5 add-to-cart">View Meal</a>
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+        <div class="bam-column">
+          <img src="img/dish-c.png" />
+          <h2>Shrimps</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+          <p><span class="price">Price:</span> 800.00</p>
+          <a class="myBtn6 add-to-cart">View Meal</a>
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+      </div>
+
+      <hr style="margin-top: 50px;" />
+
+      <div class="bam-row space-me">
+        <div class="bam-column">
+          <img src="img/dish-b.png" />
+          <h2>Rice + Veggies</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+          <p><span class="price">Price:</span> 950.00</p>
+          <a class="myBtn7 add-to-cart">View Meal</a>
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+        <div class="bam-column">
+          <img src="img/dish-a.png" />
+
+          <h2>Spagehtti Special</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+          <p><span class="price">Price:</span> 750.00</p>
+          <a class="myBtn8 add-to-cart">View Meal</a>
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+        <div class="bam-column">
+          <img src="img/dish-c.png" />
+          <h2>Shrimps</h2>
+          <p>Served as a choice meal, a protein and a 35cl pet drink</p>
+          <p><span class="price">Price:</span> 800.00</p>
+          <a class="myBtn9 add-to-cart">View Meal</a>
+          <a href="order.html" class="add-to-cart">Add to cart</a>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="bam.js"></script>
+  </body>
+</html>
